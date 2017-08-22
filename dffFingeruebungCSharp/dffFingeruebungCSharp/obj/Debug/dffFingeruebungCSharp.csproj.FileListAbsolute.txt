@@ -1,0 +1,10 @@
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\bin\Debug\dffFingeruebungCSharp.exe.config
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\bin\Debug\dffFingeruebungCSharp.exe
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\bin\Debug\dffFingeruebungCSharp.pdb
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.csprojResolveAssemblyReference.cache
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.frmSpielfeld.resources
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.Properties.Resources.resources
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.csproj.GenerateResource.Cache
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.csproj.CoreCompileInputs.cache
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.exe
+D:\Users\aaron\Documents\GitHub\dffFingeruebungCSharp\dffFingeruebungCSharp\dffFingeruebungCSharp\obj\Debug\dffFingeruebungCSharp.pdb
