@@ -39,6 +39,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblRunde = new System.Windows.Forms.Label();
+            this.btnNeu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -126,16 +127,28 @@
             // 
             this.lblRunde.AutoSize = true;
             this.lblRunde.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRunde.Location = new System.Drawing.Point(315, 59);
+            this.lblRunde.Location = new System.Drawing.Point(298, 59);
             this.lblRunde.Name = "lblRunde";
-            this.lblRunde.Size = new System.Drawing.Size(134, 24);
+            this.lblRunde.Size = new System.Drawing.Size(0, 24);
             this.lblRunde.TabIndex = 10;
+            // 
+            // btnNeu
+            // 
+            this.btnNeu.Location = new System.Drawing.Point(352, 211);
+            this.btnNeu.Name = "btnNeu";
+            this.btnNeu.Size = new System.Drawing.Size(75, 48);
+            this.btnNeu.TabIndex = 11;
+            this.btnNeu.Text = "Neues Spiel";
+            this.btnNeu.UseVisualStyleBackColor = true;
+            this.btnNeu.Visible = false;
+            this.btnNeu.Click += new System.EventHandler(this.btnNeu_Click);
             // 
             // frmSpielfeld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 319);
+            this.ClientSize = new System.Drawing.Size(507, 284);
+            this.Controls.Add(this.btnNeu);
             this.Controls.Add(this.lblRunde);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button9);
@@ -167,6 +180,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblRunde;
+        private System.Windows.Forms.Button btnNeu;
     }
 }
 
