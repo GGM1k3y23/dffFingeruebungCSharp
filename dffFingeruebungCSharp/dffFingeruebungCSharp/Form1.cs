@@ -7,6 +7,7 @@ namespace dffFingeruebungCSharp
     public partial class frmSpielfeld : Form
     {
         string spieler = "X";
+        int runden = 0;
 
         //Abbildung des Spielfeldes in einer Liste zum schnellen
         //überprüfen der Siegbedingungen
@@ -23,8 +24,7 @@ namespace dffFingeruebungCSharp
         public frmSpielfeld()
         {
             InitializeComponent();
-
-            lblRunde.Text = String.Format("Du bist dran, {0}", spieler);
+            Init();
 
             //Da jeder Button die gleichen Aktionen durchführen soll,
             //können auch alle die selbe Funktion beim Click Ereignis aufrufen.
@@ -44,7 +44,7 @@ namespace dffFingeruebungCSharp
             zeile2.AddRange(new Button[] { button4, button5, button6 });
             zeile3.AddRange(new Button[] { button7, button8, button9 });
             spalte1.AddRange(new Button[] { button1, button4, button7 });
-            spalte2.AddRange(new Button[] { button2, button4, button8 });
+            spalte2.AddRange(new Button[] { button2, button5, button8 });
             spalte3.AddRange(new Button[] { button3, button6, button9 });
             diagonale1.AddRange(new Button[] { button1, button5, button9 });
             diagonale2.AddRange(new Button[] { button7, button5, button3 });
@@ -58,10 +58,16 @@ namespace dffFingeruebungCSharp
             if (clickedButton.Text == String.Empty)
             {
                 clickedButton.Text = spieler;
-
+                
                 if (CheckSieg())
                 {
                     Ende();
+                    return;
+                }
+                if (runden == 8)
+                {
+                    Ende();
+                    return;
                 }
                 else
                 {
@@ -69,6 +75,7 @@ namespace dffFingeruebungCSharp
                     lblRunde.Text = String.Format("Du bist dran, {0}", spieler);
                 }
             }
+            runden++;
         }
 
         private bool CheckSieg()
@@ -88,7 +95,14 @@ namespace dffFingeruebungCSharp
 
         private void Ende()
         {
-            lblRunde.Text = String.Format("Spieler {0} hat \r\n gewonnen!", spieler);
+            if (runden == 8)
+            {
+                lblRunde.Text = "Unentschieden";
+            }
+            else
+            {
+                lblRunde.Text = String.Format("Spieler {0} hat \r\n gewonnen!", spieler);
+            }
 
             foreach (Control c in this.Controls)
             {
@@ -102,7 +116,13 @@ namespace dffFingeruebungCSharp
 
         private void btnNeu_Click(object sender, EventArgs e)
         {
+            Init();
+        }
+
+        private void Init()
+        {
             spieler = "X";
+            runden = 0;
             lblRunde.Text = String.Format("Du bist dran, {0}", spieler);
 
             foreach (Control c in this.Controls)
