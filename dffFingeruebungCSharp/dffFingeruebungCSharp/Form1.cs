@@ -82,9 +82,9 @@ namespace dffFingeruebungCSharp
         {
             bool result = false;
 
-            foreach(List<Button> teste in spielfeld)
+            foreach (List<Button> reihe in spielfeld)
             {
-                if (teste[0].Text == teste[1].Text && teste[1].Text == teste[2].Text && teste[0].Text != String.Empty)
+                if (reihe[0].Text == reihe[1].Text && reihe[1].Text == reihe[2].Text && reihe[0].Text != String.Empty)
                 {
                     result = true;
                     break;
